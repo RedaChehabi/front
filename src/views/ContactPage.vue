@@ -2,7 +2,7 @@
   <div class="bg-slate-50 min-h-screen pt-24 pb-16">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <Breadcrumbs class="mb-8" />
-      <!-- Header -->
+
       <div class="text-center mb-10">
         <h1 class="text-5xl font-black text-slate-900 mb-3">Parlons de votre projet</h1>
         <p class="text-slate-500 max-w-2xl mx-auto">

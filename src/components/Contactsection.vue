@@ -2,10 +2,8 @@
   <section id="contact">
     <div class="grid lg:grid-cols-2 gap-10 items-start">
 
-      <!-- Left: contact info -->
       <div class="flex flex-col gap-8">
 
-        <!-- Info items -->
         <div class="flex flex-col gap-4">
           <div v-for="info in contactInfo" :key="info.label" class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-lg bg-white border border-slate-100 shadow-sm flex items-center justify-center flex-shrink-0 text-lg">
@@ -18,7 +16,6 @@
           </div>
         </div>
 
-        <!-- CEO card -->
         <div class="rounded-2xl bg-white border border-slate-100 shadow-sm p-6">
           <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-4">Contact direct</p>
           <div class="flex flex-col gap-2 text-sm">
@@ -43,11 +40,8 @@
 
       </div>
 
-      <!-- Right: form card -->
       <Card class="bg-white border-slate-100 shadow-sm">
         <CardContent class="pt-6">
-
-          <!-- Success state -->
           <div v-if="submitted" class="flex flex-col items-center justify-center text-center py-12">
             <div class="w-16 h-16 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-4xl mb-4">✅</div>
             <h3 class="text-slate-900 font-bold text-xl mb-2">Message envoyé !</h3>

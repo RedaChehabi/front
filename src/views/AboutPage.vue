@@ -2,7 +2,7 @@
   <div class="bg-slate-50 min-h-screen pt-28 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <Breadcrumbs class="mb-8" />
-      <!-- Hero header -->
+
       <div class="mb-16">
         <p class="text-sky-600 text-xs font-bold tracking-widest uppercase mb-4">À Propos de Nous</p>
         <h1 class="text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-6">
@@ -15,7 +15,6 @@
         <div class="mt-6 h-px bg-slate-800 max-w-2xl"></div>
       </div>
 
-      <!-- Stats row -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16">
         <div
           v-for="stat in stats"
@@ -27,7 +26,6 @@
         </div>
       </div>
 
-      <!-- Long description -->
       <div class="mb-16">
         <p class="text-slate-600 text-lg leading-relaxed">
           Fondée le 27 novembre 2000 à Nouadhibou sous le nom SYCOBE, la société a bâti au fil des années
@@ -39,7 +37,6 @@
         </p>
       </div>
 
-      <!-- 4 domain cards -->
       <div class="grid sm:grid-cols-2 gap-4 mb-16">
         <div
           v-for="domain in domains"

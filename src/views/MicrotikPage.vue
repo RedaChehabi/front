@@ -2,12 +2,11 @@
   <div class="bg-white min-h-screen pt-28 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <Breadcrumbs class="mb-8" />
-      <!-- Header -->
+
       <div class="mb-16">
         <h1 class="text-5xl font-black text-slate-900 mb-4">Produits MikroTik</h1>
       </div>
 
-      <!-- Products grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
         <RouterLink
           v-for="product in products"
@@ -15,7 +14,6 @@
           :to="`/mikrotik/${product.slug}`"
           class="group flex flex-col bg-white border border-slate-100 shadow-sm rounded-2xl overflow-hidden hover:border-sky-300 transition-all duration-300 hover:-translate-y-1"
         >
-          <!-- Image -->
           <div class="w-full h-56 overflow-hidden bg-slate-50 flex items-center justify-center">
             <img
               :src="product.image"
@@ -24,7 +22,6 @@
             />
           </div>
 
-          <!-- Content -->
           <div class="flex flex-col flex-grow p-6">
             <div class="mb-3">
               <span class="text-xs px-2.5 py-1 rounded-full bg-cyan-400/10 text-sky-600 font-medium border border-cyan-400/20">

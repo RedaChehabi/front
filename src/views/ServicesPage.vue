@@ -2,7 +2,7 @@
   <div class="bg-slate-50 min-h-screen pt-28 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <Breadcrumbs class="mb-8" />
-      <!-- Header -->
+
       <div class="mb-16">
         <h1 class="text-5xl font-black text-slate-900 mb-4">Solutions IT & Télécom</h1>
         <p class="text-slate-500 text-lg max-w-2xl">
@@ -11,7 +11,6 @@
         </p>
       </div>
 
-      <!-- Services — full width cards -->
       <div class="flex flex-col gap-6 mb-20">
         <RouterLink
           v-for="(service, i) in services"
@@ -19,7 +18,6 @@
           :to="`/services/${service.slug}`"
           class="group grid lg:grid-cols-2 gap-0 bg-white border border-slate-100 rounded-2xl shadow-sm overflow-hidden hover:border-sky-200 hover:shadow-md transition-all duration-300"
         >
-          <!-- Text side -->
           <div class="p-8 lg:p-10 flex flex-col justify-between">
             <div>
               <div
@@ -63,7 +61,6 @@
             </div>
           </div>
 
-          <!-- Image side — alternates left/right -->
           <div
             class="w-full h-64 lg:h-auto overflow-hidden flex items-center justify-center"
             :class="[service.iconBg, i % 2 === 0 ? 'lg:order-last' : 'lg:order-first']"

@@ -2,7 +2,6 @@
   <div class="bg-slate-50 min-h-screen pt-28 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
-      <!-- Not found -->
       <div v-if="!service" class="rounded-2xl bg-white border border-slate-100 shadow-sm p-10 text-center">
         <h1 class="text-3xl font-black text-slate-900 mb-3">Service introuvable</h1>
         <p class="text-slate-500 mb-8">Le service demandé n'existe pas ou l'URL est incorrecte.</p>
@@ -13,7 +12,6 @@
 
       <template v-else>
 
-        <!-- Back link -->
         <RouterLink
           to="/services"
           class="inline-flex items-center gap-2 text-slate-400 hover:text-sky-600 text-sm mb-10 transition-colors"
@@ -24,7 +22,6 @@
           Retour aux services
         </RouterLink>
 
-        <!-- Hero -->
         <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <div
@@ -41,7 +38,6 @@
             </p>
           </div>
 
-          <!-- Service image -->
           <div class="rounded-2xl overflow-hidden shadow-sm" :class="service.iconBg">
             <img
               v-if="service.image"
@@ -52,13 +48,10 @@
           </div>
         </div>
 
-        <!-- Main content -->
         <div class="grid lg:grid-cols-3 gap-6 items-start">
 
-          <!-- Left: what we do + process -->
           <div class="lg:col-span-2 flex flex-col gap-6">
 
-            <!-- Bullets -->
             <div class="rounded-2xl bg-white border border-slate-100 shadow-sm p-8">
               <h2 class="text-xl font-black text-slate-900 mb-2">Ce que nous faisons</h2>
               <p class="text-slate-500 text-sm mb-6">
@@ -81,9 +74,7 @@
             </div>
           </div>
 
-          <!-- Right sidebar -->
           <div class="flex flex-col gap-5">
-            <!-- Other services -->
             <div class="rounded-2xl bg-white border border-slate-100 shadow-sm p-6">
               <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-4">Autres services</p>
               <div class="flex flex-col gap-2">

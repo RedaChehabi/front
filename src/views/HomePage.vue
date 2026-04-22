@@ -1,13 +1,10 @@
 <template>
   <div class="bg-white min-h-screen">
 
-    <!-- Hero -->
     <section class="relative min-h-screen flex items-center bg-gradient-to-br from-sky-900 via-sky-800 to-blue-900 overflow-hidden">
-      <!-- Background pattern -->
       <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
       <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-20 grid lg:grid-cols-2 gap-16 items-center">
-        <!-- Left -->
         <div>
           <h1 class="text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
             Votre Partenaire<br/>
@@ -36,15 +33,10 @@
               En savoir plus
             </RouterLink>
           </div>
-
-          <!-- Stats -->
-
         </div>
 
-        <!-- Right: hero image -->
         <div class="hidden lg:flex items-center justify-center">
           <div class="relative w-full max-w-lg">
-            <!-- Glow behind image -->
             <div class="absolute inset-0 rounded-3xl bg-cyan-400/20 blur-3xl"></div>
             <img
               src="/hero-network.jpg"
@@ -52,7 +44,6 @@
               class="relative w-full rounded-3xl object-cover shadow-2xl"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
             />
-            <!-- Fallback if no image -->
             <div class="hidden w-full aspect-square rounded-3xl bg-white/5 border border-white/10 items-center justify-center">
               <div class="grid grid-cols-2 gap-4 p-8 w-full">
                 <div v-for="card in heroCards" :key="card.title"
@@ -68,7 +59,6 @@
       </div>
     </section>
 
-    <!-- Services — dynamic tabs -->
     <section class="bg-slate-50 py-24">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -80,7 +70,6 @@
           </p>
         </div>
 
-        <!-- Tab selector -->
         <div class="flex flex-wrap justify-center gap-3 mb-12">
           <button
             v-for="(service, i) in services"
@@ -97,13 +86,11 @@
           </button>
         </div>
 
-        <!-- Active service panel -->
         <transition name="fade-up" mode="out-in">
           <div
             :key="activeService"
             class="grid lg:grid-cols-2 gap-10 items-center bg-white rounded-3xl border border-slate-100 shadow-sm p-8 lg:p-12"
           >
-            <!-- Left: info -->
             <div>
               <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" :class="services[activeService].badgeBg">
                 <span class="text-sm font-semibold" :class="services[activeService].badgeText">
@@ -134,7 +121,6 @@
               </RouterLink>
             </div>
 
-            <!-- Right: icon/visual -->
             <div class="flex items-center justify-center">
               <div
                 class="w-full rounded-2xl overflow-hidden"
@@ -152,7 +138,6 @@
       </div>
     </section>
 
-    <!-- MikroTik Products — split layout -->
     <section class="bg-white py-24">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -228,7 +213,6 @@
       </div>
     </section>
 
-    <!-- Derniers Projets — split layout -->
     <section class="bg-slate-50 py-24">
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -246,8 +230,6 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8 items-center">
-
-          <!-- Left: active project image -->
           <transition name="fade-up" mode="out-in">
             <div :key="activeProject" class="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-sm">
               <div class="w-full aspect-video overflow-hidden">
@@ -274,7 +256,6 @@
             </div>
           </transition>
 
-          <!-- Right: project list -->
           <div class="flex flex-col gap-3">
             <button
               v-for="(project, i) in projects"
@@ -307,7 +288,6 @@
       </div>
     </section>
 
-    <!-- Contact CTA -->
     <section class="bg-sky-800 py-24">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-8">
         <div>

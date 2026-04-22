@@ -1,7 +1,6 @@
 <template>
   <div class="bg-white min-h-screen pt-28 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-10">
-      <!-- Back link -->
       <RouterLink
         to="/mikrotik"
         class="inline-flex items-center gap-2 text-slate-400 hover:text-sky-600 text-sm mb-10 transition-colors"
@@ -12,7 +11,6 @@
         Retour aux produits MikroTik
       </RouterLink>
 
-      <!-- 404 fallback -->
       <div v-if="!product" class="rounded-2xl bg-white border border-slate-100 shadow-sm p-10 text-center">
         <div class="w-16 h-16 rounded-full bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-3xl mx-auto mb-5">
           📦
@@ -31,10 +29,8 @@
 
       <template v-else>
 
-        <!-- Main layout: left content / right image -->
         <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
 
-          <!-- Left: title + description + specs + CTA -->
           <div>
             <h1 class="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
               {{ product.titre }}
@@ -43,8 +39,7 @@
             <p class="text-slate-600 text-lg leading-relaxed mb-8">
               {{ product.desc }}
             </p>
-                        <!-- Specs -->
-                        <div v-if="product.specs && product.specs.length" class="mb-10">
+            <div v-if="product.specs && product.specs.length" class="mb-10">
               <h3 class="text-slate-700 font-bold text-sm uppercase tracking-widest mb-4">
                 Caractéristiques
               </h3>
@@ -65,10 +60,8 @@
             </div>
           </div>
 
-          <!-- Right: image gallery -->
           <div class="flex flex-col gap-4">
 
-            <!-- Main image -->
             <div class="rounded-2xl bg-white border border-slate-100 shadow-sm overflow-hidden flex items-center justify-center p-6">
               <transition name="fade-img" mode="out-in">
                 <img
@@ -80,7 +73,6 @@
               </transition>
             </div>
 
-            <!-- Thumbnails -->
             <div v-if="product.image.length > 1" class="flex gap-3 flex-wrap">
               <button
                 v-for="(img, i) in product.image"
@@ -230,7 +222,6 @@ export default {
     },
   },
   watch: {
-    // Reset to first image when navigating to a different product
     slug() {
       this.activeImage = 0
     },

@@ -2,10 +2,8 @@
   <footer class="bg-slate-700 border-t border-slate-700" aria-label="Footer">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
 
-      <!-- Top: Logo + Columns -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
 
-        <!-- Brand column -->
         <div class="col-span-2 md:col-span-3 lg:col-span-1">
           <RouterLink to="/">
             <img src="/logo.png" alt="SYCOBE" class="h-12 w-auto mb-4" />
@@ -15,7 +13,6 @@
           </p>
         </div>
 
-        <!-- Column: Solutions -->
         <div>
           <p class="text-white text-xs font-bold tracking-widest uppercase mb-5">Solutions</p>
           <ul class="flex flex-col gap-3">
@@ -30,7 +27,6 @@
           </ul>
         </div>
 
-        <!-- Column: MikroTik -->
         <div>
           <p class="text-white text-xs font-bold tracking-widest uppercase mb-5">MikroTik</p>
           <ul class="flex flex-col gap-3">
@@ -45,7 +41,6 @@
           </ul>
         </div>
 
-        <!-- Column: Projets -->
         <div>
           <p class="text-white text-xs font-bold tracking-widest uppercase mb-5">Projets</p>
           <ul class="flex flex-col gap-3">
@@ -60,7 +55,6 @@
           </ul>
         </div>
 
-        <!-- Column: Entreprise -->
         <div>
           <p class="text-white text-xs font-bold tracking-widest uppercase mb-5">Entreprise</p>
           <ul class="flex flex-col gap-3">
@@ -77,10 +71,8 @@
 
       </div>
 
-      <!-- Bottom bar -->
       <div class="pt-8 border-t border-emerald-900 flex flex-col md:flex-row items-center justify-between gap-4">
 
-        <!-- LinkedIn -->
           <a
           href="https://mr.linkedin.com/company/sycobe"
           target="_blank"
@@ -93,7 +85,6 @@
           </svg>
         </a>
 
-        <!-- Copyright -->
         <p class="text-slate-500 text-sm">
           © {{ currentYear }} SYCOBE. Tous droits réservés.
         </p>
