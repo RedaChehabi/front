@@ -133,8 +133,8 @@ export default {
           { label: 'SAHARA SCOLAR', to: '/projects' },
         ],
         entreprise: [
-          { label: 'Accueil',       to: '/' },
-          { label: 'Présentation',  to: '/about' },
+          { label: 'Présentation',       to: '/about' },
+          { label: 'Services',  to: '/services' },
           { label: 'Projets',       to: '/projects' },
           { label: 'Contact',       to: '/contact' },
         ],
