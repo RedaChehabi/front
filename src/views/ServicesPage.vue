@@ -104,7 +104,7 @@ export default {
             'VSAT & liaisons FH',
             'Drive test & optimisation radio',
             'Traitement de CDR & RA',
-            'Audit télécom & reporting',
+            'Audit télécom & reporting'
           ],
         },
         {
@@ -161,7 +161,7 @@ export default {
             "Systèmes de facturation SMS",
             "Solution GED",
             "J2EE, PHP, MySQL, Oracle",
-            "Maintenance & évolution",
+            "Maintenance & évolution"
           ]
         },
       ],

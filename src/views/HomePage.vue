@@ -415,13 +415,13 @@ export default {
           badgeBg: 'bg-cyan-50',
           badgeText: 'text-cyan-700',
           heading: 'Infrastructure Télécom de bout en bout',
-          desc: "SYCOBE dispose d'une expérience éprouvée dans le déploiement et la maintenance d'infrastructures télécom en Mauritanie.",
+          desc: "SYCOBE vous offre des services complets en réseau télécom : TV, Internet, téléphonie mobile, RNIS, VSAT et liaisons FH. Notre équipe assure le déploiement et la maintenance d'infrastructures télécom à l'échelle nationale.",
           items: [
-            'Installation du matériel télécom',
-            'Drive test & analyse de couverture',
+            'Réseau TV & téléphonie mobile',
             'VSAT & liaisons FH',
+            'Drive test & optimisation radio',
             'Traitement de CDR & RA',
-            'Audit télécom',
+            'Audit télécom & reporting'
           ],
         },
         {
@@ -431,13 +431,13 @@ export default {
           badgeBg: 'bg-blue-50',
           badgeText: 'text-blue-700',
           heading: 'Réseaux fiables et sécurisés',
-          desc: "Conception, déploiement et maintenance de réseaux informatiques adaptés à vos besoins opérationnels.",
+          desc: "Mise en place des réseaux IP et vente de matériel IT : routeurs, switches, BLR, points d'accès, serveurs, pilons, mâts et imprimantes.",
           items: [
-            'Étude & conception LAN/WAN',
-            'Câblage structuré',
-            'Wifi ADSL & haut débit',
-            'Firewall & VPN',
-            'Audit sécurité réseau',
+            "Réseaux IP & Data Centre",
+            "Routeurs & switches",
+            "BLR & points d'accès",
+            "Firewall & VPN",
+            "Audit informatique"
           ],
         },
         {
@@ -453,7 +453,7 @@ export default {
             'Suite Office & productivité',
             'Administration réseau',
             'Sécurité informatique',
-            'Gestion de projets IT',
+            'Gestion de projets IT'
           ],
         },
         {
@@ -463,13 +463,13 @@ export default {
           badgeBg: 'bg-purple-50',
           badgeText: 'text-purple-700',
           heading: 'Applications sur mesure pour votre métier',
-          desc: "Développement d'applications web et métier avec les technologies les plus adaptées à votre contexte.",
+          desc: "Développement d'applications pour opérateurs télécoms, écoles, facultés, cabinets médicaux, sociétés de manutention, pêche et transport. Systèmes de facturation et solution GED.",
           items: [
-            'Applications web J2EE & PHP',
-            'Bases de données MySQL & Oracle',
-            'Solutions Visual Basic',
-            'Systèmes de gestion métier',
-            'Intégration & API',
+            "Applications métier sur mesure",
+            "Systèmes de facturation SMS",
+            "Solution GED",
+            "J2EE, PHP, MySQL, Oracle",
+            "Maintenance & évolution"
           ],
         },
       ],
