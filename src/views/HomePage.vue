@@ -357,7 +357,6 @@
                 :alt="partner.name"
                 class="h-10 w-auto object-contain"
               />
-              <span class="text-slate-800 font-bold text-xs text-center">{{ partner.name }}</span>
             </div>
           </div>
 
@@ -528,16 +527,16 @@ export default {
         },
       ],
       clients: [
-        { name: 'Mauritel' , logo: '/logos/clients/mauritel.png' },
+        { name: 'Mauritel' , logo: '/logos/clients/mauritel.jpg' },
         { name: 'Chinguitel' , logo: '/logos/clients/Chinguitel.png' },
         { name: 'Mattel' , logo: '/logos/clients/mattel.jpg' },
-        { name: 'ARE' , logo: '/logos/clients/are.jpg' },
+        { name: 'ARE' , logo: '/logos/clients/ARE.png' },
         { name: 'CNAM' , logo: '/logos/clients/cnam.jpg' },
         { name: 'SNIM' , logo: '/logos/clients/snim.jpg' },
         { name: 'Faculté de Médecine' , logo: '/logos/clients/UNA.png' },
         { name: 'Faculté des Sciences et Techniques' , logo: '/logos/clients/UNA.png' },
         { name: 'INSP' , logo: '/logos/clients/INSP.jpg' },
-        { name: 'SOMIR' , logo: '/logos/clients/somir.png' },
+        { name: 'SOMIR' , logo: '/logos/clients/SOMIR.png' },
         { name: 'COMMECA' , logo: '/logos/clients/comeca.png' },
         { name: 'CSS' , logo: '/logos/clients/CSS.png' },
         { name: 'CSA Bassiknou' , logo: '/logos/clients/CSA.jpg' },
